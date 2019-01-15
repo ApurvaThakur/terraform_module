@@ -1,8 +1,9 @@
 ##Project: Example
-Creates example.crt(TLS certificate), example_cert_req.csr ( csr request file to rootca), rooca.pem (Rootca certificate), TLS_priv.key ( TLS certificate's private key).
-It will call two modules: Rootca and TLS 
 
+It will call two modules: Rootca and TLS.
+input.tfvars is the variable file which contains Values for the input variables of Rootca and TLS module can be gathered in variable definition files and passed together using the -var-file=FILE option.
 
+terraform apply -var-file=input.tfvars
 
 ## Inputs
 
